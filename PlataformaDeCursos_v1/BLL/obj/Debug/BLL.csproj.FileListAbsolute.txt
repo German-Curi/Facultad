@@ -20,3 +20,14 @@ C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BLL\
 C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BLL\obj\Debug\BLL.dll
 C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BLL\obj\Debug\BLL.pdb
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\bin\Debug\BLL.dll
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\bin\Debug\BLL.pdb
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\bin\Debug\BE.dll
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\bin\Debug\DAL.dll
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\bin\Debug\BE.pdb
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\bin\Debug\DAL.pdb
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\obj\Debug\BLL.dll
+C:\Users\leafnoise\Facultad\LPA\PlataformaDeCursos_v1\BLL\obj\Debug\BLL.pdb

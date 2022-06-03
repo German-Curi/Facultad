@@ -50,9 +50,12 @@
 				</div>
 				<div class="col-md-6">
 				<div class="header-right">
-					<h1></h1>
+					
                     <h1>Página Principal</h1>
 					<p>La lalala.</p>
+
+                    <h2>CAMBIOS PARA VER EN EL GIT </h2>
+
                   
     </header>
     <form id="form1" runat="server">
