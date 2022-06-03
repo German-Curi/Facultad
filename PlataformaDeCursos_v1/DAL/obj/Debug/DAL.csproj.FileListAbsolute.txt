@@ -1,0 +1,9 @@
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\bin\Debug\DAL.dll
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\bin\Debug\DAL.pdb
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\bin\Debug\BE.dll
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\bin\Debug\BE.pdb
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.dll
+C:\Users\flv_p\Desktop\ProyectoFinal LPPA\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.pdb
