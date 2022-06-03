@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="GUI.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>HOME</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg  bg-dark fixed-top">
+        <a  class="navbar-brand text-danger font-weight-bold" href="PanelGeneral.aspx">
+  		Página de Cursos
+  	</a>
+              <button align="right" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <strong class="text-primary" href="PanelGeneral.aspx">HOME</strong>
+    </button>
+     <div class="collapse navbar-collapse" id="nav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="Info.aspx">Información</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="Curso.aspx">Cursos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="Login.aspx">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<header class="header"> 
+<%--<a class="btn btn-default" href="Info.aspx">Información &raquo;</a--%>
+     	<br><br>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="header-left">
+						<%--<img src = "images\ic.png" style="width: 100%" class="py-5 px-5">--%>
+					</div>
+				</div>
+				<div class="col-md-6">
+				<div class="header-right">
+					<h1></h1>
+                    <h1>Página Principal</h1>
+					<p>La lalala.</p>
+                  
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

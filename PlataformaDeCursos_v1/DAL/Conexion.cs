@@ -23,7 +23,12 @@ namespace DAL
         }
         #endregion
 
-
+        public SqlConnection ConexionBD()
+        {
+            SqlConnection conexion = new SqlConnection();
+            conexion.ConnectionString = "Data Source=DESKTOP-KRLDK5C;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            return conexion;
+        }
 
     }
 }

@@ -218,8 +218,10 @@
     <Content Include="css\morris\morris.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="Curso.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Info.aspx" />
     <Content Include="js\AdminLTE\app.js" />
     <Content Include="js\AdminLTE\dashboard.js" />
     <Content Include="js\AdminLTE\demo.js" />
@@ -345,11 +347,34 @@
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="miUAI.aspx" />
+    <Content Include="PanelGeneral.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Curso.aspx.cs">
+      <DependentUpon>Curso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Curso.aspx.designer.cs">
+      <DependentUpon>Curso.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -357,6 +382,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="miUAI.aspx.cs">
+      <DependentUpon>miUAI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="miUAI.aspx.designer.cs">
+      <DependentUpon>miUAI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelGeneral.aspx.cs">
+      <DependentUpon>PanelGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelGeneral.aspx.designer.cs">
+      <DependentUpon>PanelGeneral.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -370,6 +409,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Home.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

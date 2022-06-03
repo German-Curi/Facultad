@@ -22,7 +22,8 @@ namespace GUI
             string passName = "admin";
             if (user.Equals(userName) && password.Equals(passName))
             {
-                Response.Write(" <script> alert('USUARIO CORRECTO') </script >");
+                //Response.Write(" <script> alert('USUARIO CORRECTO') </script >");
+                Response.Redirect("miUAI.aspx");
             }
             else
             {
