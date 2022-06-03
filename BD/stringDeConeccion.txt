@@ -1,0 +1,1 @@
+Data Source=DESKTOP-KRLDK5C;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
