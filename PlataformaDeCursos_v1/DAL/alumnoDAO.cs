@@ -9,7 +9,7 @@ using System.Data;
 
 namespace DAL
 {
-    internal class alumnoDAO
+    public class alumnoDAO
     {
         #region "PATRON SINGLETON"
         private static alumnoDAO daoalumno = null;
@@ -27,9 +27,9 @@ namespace DAL
         public alumno AccesoSistema(String user, String pass)
         {
             SqlConnection conexion = null;
-            SqlCommand cmd = null;
+            SqlCommand cmd ;
             alumno objAlumno = null;
-            SqlDataReader dr = null;
+            SqlDataReader dr;
             try 
             {
                 conexion = Conexion.getInstance().ConexionBD();
@@ -42,16 +42,16 @@ namespace DAL
                 if (dr.Read())
                 {
                     objAlumno = new alumno();
-                    objAlumno.ID = Convert.ToInt32(dr["idAlumno"].ToString());
-                    objAlumno.Nombre = dr["nombres"].ToString();
-                    objAlumno.Apellido = dr["apellido"].ToString();
-                    objAlumno.TipoDocumento = dr["tipoDocumennto"].ToString();
-                    objAlumno.NroDocumento = Convert.ToInt32(dr["nroDocumento"].ToString());
-                    objAlumno.Edad = Convert.ToInt32(dr["edad"].ToString());
-                    objAlumno.Telefono = dr["telefono"].ToString();
-                    objAlumno.Email = dr["email"].ToString();
-                    objAlumno.Clave = dr["clave"].ToString();
-                    objAlumno.Estado = true;
+                    objAlumno.ID = Convert.ToInt32(dr["ID_Alumno"].ToString());
+                    //objAlumno.Nombre = dr["nombres"].ToString();
+                    //objAlumno.Apellido = dr["apellido"].ToString();
+                    //objAlumno.TipoDocumento = dr["tipoDocumennto"].ToString();
+                    objAlumno.NroDocumento = Convert.ToInt32(dr["Num_Documento"].ToString());
+                    //objAlumno.Edad = Convert.ToInt32(dr["edad"].ToString());
+                    //objAlumno.Telefono = dr["telefono"].ToString();
+                    objAlumno.Email = dr["Email"].ToString();
+                    //objAlumno.Clave = dr["clave"].ToString();
+                    //objAlumno.Estado = true;
 
                 }
             }
