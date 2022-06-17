@@ -17,7 +17,7 @@
                     <asp:TextBox ID="txtUsuario" runat="server" CssClass=" form-control" placeholder="Ingrese usuario" Width="100%"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Ingrese clave" Width="100%"></asp:TextBox>
+                    <asp:TextBox TextMode="Password" ID="txtPassword" runat="server" CssClass="form-control" placeholder="Ingrese clave" Width="100%"></asp:TextBox>
 
                 </div>
             </div>

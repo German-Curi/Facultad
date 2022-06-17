@@ -46,11 +46,11 @@ namespace DAL
                     //objAlumno.Nombre = dr["nombres"].ToString();
                     //objAlumno.Apellido = dr["apellido"].ToString();
                     //objAlumno.TipoDocumento = dr["tipoDocumennto"].ToString();
-                    objAlumno.NroDocumento = Convert.ToInt32(dr["Num_Documento"].ToString());
+                    //objAlumno.NroDocumento = Convert.ToInt32(dr["Num_Documento"].ToString());
                     //objAlumno.Edad = Convert.ToInt32(dr["edad"].ToString());
                     //objAlumno.Telefono = dr["telefono"].ToString();
                     objAlumno.Email = dr["Email"].ToString();
-                    //objAlumno.Clave = dr["clave"].ToString();
+                    objAlumno.Clave = dr["Contrasenia"].ToString();
                     //objAlumno.Estado = true;
 
                 }

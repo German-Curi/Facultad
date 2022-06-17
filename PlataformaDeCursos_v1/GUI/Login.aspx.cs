@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BE;
 using BLL;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace GUI
 {
@@ -15,25 +17,23 @@ namespace GUI
         {
 
         }
-
+        public static string GetSHA1(String texto)
+        {
+            SHA1CryptoServiceProvider sh = new SHA1CryptoServiceProvider();
+            sh.ComputeHash(ASCIIEncoding.ASCII.GetBytes(texto));
+            byte[] re = sh.Hash;
+            StringBuilder sb = new StringBuilder();
+            foreach (byte i in re)
+            {
+                sb.Append (i.ToString("x2"));
+            }
+            return sb.ToString();
+        }
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            //string user = txtUsuario.Text;
-            //string password = txtPassword.Text;
-            //string userName = "admin";
-            //string passName = "admin";
-            //if (user.Equals(userName) && password.Equals(passName))
-            //{
-            //    //Response.Write(" <script> alert('USUARIO CORRECTO') </script >");
-            //    Response.Redirect("miUAI.aspx");
-            //}
-            //else
-            //{
-            //    Response.Write(" <script> alert('USUARIO INCORRECTO') </script >");
+            String pass = GetSHA1(txtPassword.Text);
 
-            //}
-
-            alumno objAlumno = AlumnoLN.getInstance().AccesoSistema(txtUsuario.Text, txtPassword.Text);
+            alumno objAlumno = AlumnoLN.getInstance().AccesoSistema(txtUsuario.Text, pass );
             
             if(objAlumno != null)
             {
