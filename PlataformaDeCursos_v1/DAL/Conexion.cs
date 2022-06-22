@@ -24,9 +24,11 @@ namespace DAL
         #endregion
 
         public SqlConnection ConexionBD()
-        {
+        { 
+            string cn_ger = @"Data Source=GCURI\SQLEXPRESS;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True";
+            //string cn_flavio = "Data Source=DESKTOP-KRLDK5C;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"; // USAR CUANDO CAMBIO UBICACION DE LA BASE DE DATOS.
             SqlConnection conexion = new SqlConnection();
-            conexion.ConnectionString = "Data Source=DESKTOP-KRLDK5C;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            conexion.ConnectionString = cn_ger;
             return conexion;
         }
 

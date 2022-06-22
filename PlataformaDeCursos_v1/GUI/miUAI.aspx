@@ -48,6 +48,9 @@
 					<p>La UAI posee diez facultades: Arquitectura, Ciencias de la Comunicación, Ciencias de la Educación y Psicopedagogía, Ciencias Económicas, Derecho y Ciencias Políticas, Medicina y Ciencias de la Salud, Motricidad Humana y Deportes, Psicología y Relaciones Humanas, Tecnología Informática y Turismo y Hospitalidad.</p>
           <p>Nuestros Centros ofrecen una variada de Cursos de Capacitación Presencial y online a través de convenios con Instituciones de distinta índole que confían en la calidad educativa, seriedad, Trayectoria y  compromiso  que distinguen a nuestra plataforma.</p>
 				</div>
+                <div>
+                    <asp:Label ID="lbl" runat="server" Text="Label"></asp:Label>
+                </div>
 			</div>
 		</div>
 	</div>

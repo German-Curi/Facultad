@@ -14,7 +14,7 @@
         <form id="form1" runat="server">
             <div class="body bg-gray">
                 <div class="form-group"> 
-                    <asp:TextBox ID="txtUsuario" runat="server" CssClass=" form-control" placeholder="Ingrese usuario" Width="100%"></asp:TextBox>
+                    <asp:TextBox ID="txtUsuario" runat="server" CssClass="form-control" placeholder="Ingrese usuario" Width="100%"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <asp:TextBox TextMode="Password" ID="txtPassword" runat="server" CssClass="form-control" placeholder="Ingrese clave" Width="100%"></asp:TextBox>
@@ -23,7 +23,7 @@
             </div>
             <div class="footer"> 
 
-                <asp:Button ID="btnIngresar" runat="server" Text="Iniciar sesión" CssClass="btn bg-olive" OnClick="btnIngresar_Click" Width="31%" />
+                <asp:Button ID="btnIngresar" runat="server" Text="Iniciar sesión" CssClass="btn bg-blue" OnClick="btnIngresar_Click" Width="31%" />
                 <asp:Button ID="btnRegistrarAlumno" runat="server" Text="Registrar Alumno" CssClass="btn bg-olive" Width="31%" />
                 <asp:Button ID="btnRegistrarProfesor" runat="server" Text="Registrar Profesor" CssClass="btn bg-olive" Width="31%" />
 

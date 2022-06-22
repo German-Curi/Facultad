@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BE;
 
 namespace GUI
 {
@@ -11,7 +12,8 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            alumno objAlumno = (alumno)Session["usuario"];
+            lbl.Text = objAlumno.Email;
         }
     }
 }

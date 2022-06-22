@@ -10,3 +10,9 @@ C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BE\o
 C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BE\obj\Debug\BE.dll
 C:\Users\flv_p\Desktop\ASP cosas\ProyectoFinal LPPA\PlataformaDeCursos_v1.1\BE\obj\Debug\BE.pdb
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\bin\Debug\BE.dll
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\bin\Debug\BE.pdb
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.dll
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.pdb

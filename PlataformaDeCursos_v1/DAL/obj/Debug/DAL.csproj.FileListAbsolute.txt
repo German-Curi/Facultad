@@ -25,3 +25,12 @@ C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.CoreCompi
 C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.dll
 C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.pdb
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\bin\Debug\DAL.dll
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\bin\Debug\DAL.pdb
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\bin\Debug\BE.dll
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\bin\Debug\BE.pdb
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.dll
+C:\Users\gercu\Facultad\PlataformaDeCursos_v1\DAL\obj\Debug\DAL.pdb
