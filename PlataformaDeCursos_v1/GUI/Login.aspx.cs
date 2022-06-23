@@ -39,7 +39,7 @@ namespace GUI
             {
                 Session["usuario"] = objAlumno;
                 Response.Write(" <script> alert('USUARIO CORRECTO') </script >");
-                Response.Redirect("miUAI.aspx");
+                Response.Redirect("PanelGeneral.aspx");
             }
             else
             {

@@ -208,12 +208,12 @@
                             <span>Mi Perfil</span>
                         </a>
                     </li>
-  <%--              <li>
-                         <a href="Login.aspx">
+                <li>
+                         <a href="miUAI.aspx">
                             <i class="fa fa-dashboard"></i>
-                            <span>Login</span>
+                            <span>Salir</span>
                         </a>
-                    </li>--%>
+                    </li>
 
 
                 </ul>
