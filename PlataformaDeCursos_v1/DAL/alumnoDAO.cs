@@ -43,12 +43,12 @@ namespace DAL
                 {
                     objAlumno = new alumno();
                     objAlumno.ID = Convert.ToInt32(dr["ID_Alumno"].ToString());
-                    //objAlumno.Nombre = dr["nombres"].ToString();
-                    //objAlumno.Apellido = dr["apellido"].ToString();
-                    //objAlumno.TipoDocumento = dr["tipoDocumennto"].ToString();
-                    //objAlumno.NroDocumento = Convert.ToInt32(dr["Num_Documento"].ToString());
-                    //objAlumno.Edad = Convert.ToInt32(dr["edad"].ToString());
-                    //objAlumno.Telefono = dr["telefono"].ToString();
+                    objAlumno.Nombre = dr["Nombre"].ToString();
+                    objAlumno.Apellido = dr["Apellido"].ToString();
+                    objAlumno.TipoDocumento = dr["Tipo_Documento"].ToString();
+                    objAlumno.NroDocumento = Convert.ToInt32(dr["Num_Documento"].ToString());
+                    objAlumno.Edad = Convert.ToInt32(dr["Edad"].ToString());
+                    objAlumno.Telefono = dr["Telefono"].ToString();
                     objAlumno.Email = dr["Email"].ToString();
                     objAlumno.Clave = dr["Contrasenia"].ToString();
                     //objAlumno.Estado = true;
@@ -65,6 +65,50 @@ namespace DAL
                 conexion.Close();
             }
             return objAlumno;
+        }
+
+        public List<curso> ObtenerCursosAlumno(int id)
+        {
+            SqlConnection conexion = null;
+            SqlCommand cmd;
+            List<curso> lsCurso = new List<curso>();
+            SqlDataReader dr;
+            try
+            {
+                conexion = Conexion.getInstance().ConexionBD();
+                cmd = new SqlCommand("spCursos_Alumno", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_alumno", id);
+                conexion.Open();
+                dr = cmd.ExecuteReader();
+                while (dr.HasRows)
+                {
+                   while(dr.Read())
+                    {
+                        curso auxcur = new curso();
+                        auxcur.Nombre = dr["Curso"].ToString();
+                        auxcur.Descripcion = dr["Descripcion"].ToString();
+                        auxcur.Area = dr["Area"].ToString();
+                        auxcur.Turno = dr["Turno"].ToString();
+                        auxcur.Dia = dr["Dia"].ToString();
+                        auxcur.Nombre_Profesor = dr["Nombre Profesor"].ToString();
+                        auxcur.Apellido_profesor = dr["Apellido Profesor"].ToString();
+                        lsCurso.Add(auxcur);
+                    }
+                    dr.NextResult();
+                }
+            }
+            catch (Exception ex)
+            {
+                lsCurso = null;
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+            return lsCurso;
+
         }
 
     }

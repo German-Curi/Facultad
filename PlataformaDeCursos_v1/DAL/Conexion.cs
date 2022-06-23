@@ -25,11 +25,11 @@ namespace DAL
 
         public SqlConnection ConexionBD()
         { 
-            //string cn_ger = @"Data Source=GCURI\SQLEXPRESS;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True";
-            string cn_flavio = "Data Source=DESKTOP-KRLDK5C;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"; // USAR CUANDO CAMBIO UBICACION DE LA BASE DE DATOS.
+            string cn_ger = @"Data Source=GCURI\SQLEXPRESS;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True";
+            //string cn_flavio = "Data Source=DESKTOP-KRLDK5C;Initial Catalog=PlataformaDeCursos_bd;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"; // USAR CUANDO CAMBIO UBICACION DE LA BASE DE DATOS.
             SqlConnection conexion = new SqlConnection();
-            //conexion.ConnectionString = cn_ger;
-            conexion.ConnectionString = cn_flavio;
+            //conexion.ConnectionString = ;
+            conexion.ConnectionString = cn_ger;
             return conexion;
         }
 

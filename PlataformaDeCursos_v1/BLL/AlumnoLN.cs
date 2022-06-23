@@ -35,5 +35,17 @@ namespace BLL
             }
         }
 
+        public List<curso> ObtenerCursosAlumno(int id)
+        {
+            try
+            {
+                return alumnoDAO.getInstance().ObtenerCursosAlumno(id);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

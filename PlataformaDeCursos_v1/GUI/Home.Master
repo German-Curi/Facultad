@@ -157,8 +157,10 @@
 				<div class="header-right">
 					
                  <%--   <h1>Página Principal</h1>--%>
-
-
+                    </div>
+				</div>
+			</div>
+         </div>
                   
     </header>
 
@@ -175,14 +177,14 @@
                             Bienvenido sr(a)
                         </p>
                         <p>
-                            <asp:Label runat="server" ID="txtUsuario"></asp:Label>
+                            <br /> <asp:Label runat="server" ID="txtUsuario"></asp:Label>
                         </p>
                     </div>
 
                 </div>
                 <ul class="sidebar-menu">
                     <li class="active">
-                        <a href="#">
+                        <a href="PanelGeneral.aspx">
                             <i class="fa fa-dashboard"></i>
                             <span>Panel General</span>
                         </a>

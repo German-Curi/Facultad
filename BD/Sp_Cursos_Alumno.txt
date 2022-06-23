@@ -1,0 +1,25 @@
+CREATE PROCEDURE [dbo].[spCursos_Alumno] 
+	@id_alumno integer
+as
+BEGIN
+SELECT a.ID_Alumno, a.Nombre as 'Nombre Alumno', c.Nombre as 'Curso', c.Descripcion, c.Area, d.ID_Dia, d.Dia,t.ID_Turno, t.Turno, p.Nombre as 'Nombre Profesor', p.Apellido as 'Apellido Profesor', p.Email as 'Email Profesor'
+							FROM inscripciones as i
+							LEFT JOIN alumnos as a ON
+							a.ID_Alumno=i.ID_Alumno
+							LEFT JOIN cursos as c ON
+							c.ID_Curso=i.ID_Curso
+							LEFT JOIN inscripciones_cursos as ic ON
+							ic.ID_Curso=i.ID_Curso
+							LEFT JOIN dias as d ON
+							d.ID_Dia=ic.ID_Dia
+							LEFT JOIN turnos as t ON
+							t.ID_Turno=ic.ID_Turno
+							LEFT JOIN profesores_cursos as pc ON
+							pc.ID_Curso=i.ID_Curso
+							LEFT JOIN profesores as p ON
+							p.ID_Profesor=pc.ID_Profesor
+							WHERE a.ID_Alumno = @id_alumno AND i.ID_inscripciones=ic.ID_inscripciones
+END
+
+
+
