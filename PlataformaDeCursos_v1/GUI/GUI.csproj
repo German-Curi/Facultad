@@ -348,7 +348,9 @@
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="Login.aspx" />
-    <Content Include="miUAI.aspx" />
+    <Content Include="miPerfil.aspx" />
+    <Content Include="InicioLibre.aspx" />
+    <Content Include="misCursos.aspx" />
     <Content Include="PanelGeneral.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -384,12 +386,26 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="miUAI.aspx.cs">
-      <DependentUpon>miUAI.aspx</DependentUpon>
+    <Compile Include="miPerfil.aspx.cs">
+      <DependentUpon>miPerfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="miUAI.aspx.designer.cs">
-      <DependentUpon>miUAI.aspx</DependentUpon>
+    <Compile Include="miPerfil.aspx.designer.cs">
+      <DependentUpon>miPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioLibre.aspx.cs">
+      <DependentUpon>InicioLibre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioLibre.aspx.designer.cs">
+      <DependentUpon>InicioLibre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="misCursos.aspx.cs">
+      <DependentUpon>misCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="misCursos.aspx.designer.cs">
+      <DependentUpon>misCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="PanelGeneral.aspx.cs">
       <DependentUpon>PanelGeneral.aspx</DependentUpon>

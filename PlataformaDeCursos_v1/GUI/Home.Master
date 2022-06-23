@@ -188,26 +188,32 @@
                         </a>
                     </li>
 
-                    <li>
+<%--                    <li>
                         <a href="Info.aspx">
                             <i class="fa fa-dashboard"></i>
                             <span>Información</span>
                         </a>
-                    </li>
+                    </li>--%>
 
                     <li>
-                         <a href="Curso.aspx">
+                         <a href="misCursos.aspx">
                             <i class="fa fa-dashboard"></i>
                             <span>Cursos</span>
                         </a>
                     </li>
 
                     <li>
+                         <a href="miPerfil.aspx">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Mi Perfil</span>
+                        </a>
+                    </li>
+  <%--              <li>
                          <a href="Login.aspx">
                             <i class="fa fa-dashboard"></i>
                             <span>Login</span>
                         </a>
-                    </li>
+                    </li>--%>
 
 
                 </ul>
@@ -219,7 +225,7 @@
     <aside class="right-side">
         <section class="content-header">
                 <h1>
-                    <asp:Label ID="lblOpcionMenu" runat="server" Text="Panel General"></asp:Label>
+                    <asp:Label ID="lblOpcionMenu" runat="server" Text="Menú de alumno"></asp:Label>
                 </h1>
         </section>
 
