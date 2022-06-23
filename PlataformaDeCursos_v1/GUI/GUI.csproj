@@ -221,6 +221,7 @@
     <Content Include="Curso.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="img\iconoUsuario.jpg" />
     <Content Include="Info.aspx" />
     <Content Include="js\AdminLTE\app.js" />
     <Content Include="js\AdminLTE\dashboard.js" />

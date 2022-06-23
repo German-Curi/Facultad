@@ -16,3 +16,9 @@ C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.csproj.AssemblyRef
 C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.dll
 C:\Users\gercu\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.pdb
+C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\BE\bin\Debug\BE.dll
+C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\BE\bin\Debug\BE.pdb
+C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.dll
+C:\Users\flv_p\Facultad\PlataformaDeCursos_v1\BE\obj\Debug\BE.pdb
