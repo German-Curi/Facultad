@@ -11,7 +11,7 @@ namespace GUI
 {
 
 
-    public partial class frmGestionarAlumno
+    public partial class Curso
     {
     }
 }

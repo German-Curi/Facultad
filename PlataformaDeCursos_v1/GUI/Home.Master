@@ -116,10 +116,21 @@
 </head>
 
 <body class="skin-blue"> 
+<%--<body class="skin-black"> --%>
 
+
+<%--    <nav class="navbar navbar-expand-lg  bg-dark fixed-top">
+        <a  class="navbar-brand text-danger font-weight-bold" href="PanelGeneral.aspx">
+  		Página de Cursos
+  	</a>
+              <button align="right" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <strong class="text-primary" href="PanelGeneral.aspx">HOME</strong>
+    </button>
+
+</nav>--%>
 <header class="header"> 
     <!-- CABECERA------------------------------ --------------------------------------- -->
-
+<%--<a class="btn btn-default" href="Info.aspx">Información &raquo;</a--%>
     
         <a class="logo" href="PanelGeneral.aspx">Instituto de Cursos</a>  
         <nav class="navbar navbar-static-top" role="navigation">
@@ -139,13 +150,13 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="header-left">
-					
+						<%--<img src = "images\ic.png" style="width: 100%" class="py-5 px-5">--%>
 					</div>
 				</div>
 				<div class="col-md-6">
 				<div class="header-right">
 					
-               
+                 <%--   <h1>Página Principal</h1>--%>
                     </div>
 				</div>
 			</div>
@@ -179,6 +190,12 @@
                         </a>
                     </li>
 
+<%--                    <li>
+                        <a href="Info.aspx">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Información</span>
+                        </a>
+                    </li>--%>
 
                     <li>
                          <a href="misCursos.aspx">
@@ -195,6 +212,7 @@
                     </li>
                 <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <asp:Button ID="Button1" runat="server" Text="Button" /> 
                         <i class="fa fa-dashboard"></i>
 
@@ -206,9 +224,11 @@
                     </li>
                 <li>
                          <a href="Salir.aspx">
+=======
+                         <a href="miUAI.aspx">
+>>>>>>> parent of 92c5cd6 (Cerrar sesion)
                             <i class="fa fa-dashboard"></i>
                             <span>Salir</span>
-
                         </a>
 >>>>>>> 92c5cd6d096f82f14ec7cee9e73100e9cd8a2b98
                     </li>
@@ -233,14 +253,22 @@
                     </asp:ScriptManager>
                     <div>
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-   
+                            <!-- CARGAR EL DISEÑO DE LA PAGINA QUE HEREDA DE MASTER PAGE-->
                         </asp:ContentPlaceHolder>
                     </div>
                 </form>
          </section>
 
     </aside>
+<%--    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>--%>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 

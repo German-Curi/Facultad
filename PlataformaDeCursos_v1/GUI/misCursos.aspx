@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+
     <div class="header-left">
 					<h1>Cursos</h1>
 					<p>Listado de cursos inscriptos</p>

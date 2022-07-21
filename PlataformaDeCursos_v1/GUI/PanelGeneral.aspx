@@ -4,9 +4,4 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--<p></p>--%>
-
-      <authentication mode="Forms">
-    <forms name="Autentificacion" defaultUrl="PanelGeneral.aspx" loginUrl="Login.aspx" path="/" protection="All"/>
-  </authentication>
-
 </asp:Content>
