@@ -13,6 +13,13 @@
         <div class="header">Login</div>
         <form id="form1" runat="server">
             <div class="body bg-gray">
+
+
+  <%--       <asp:Login ID="LoginUser" runat="server" EnableViewState="false" OnAuthenticate="LoginUser_Authenticate" Width="100%">
+         <LayoutTemplate>--%>
+
+
+
                 <div class="form-group"> 
                     <asp:TextBox ID="txtUsuario" runat="server" CssClass="form-control" placeholder="Ingrese usuario" Width="100%"></asp:TextBox>
                 </div>
@@ -26,6 +33,9 @@
                 <asp:Button ID="btnIngresar" runat="server" Text="Iniciar sesión" CssClass="btn bg-blue" OnClick="btnIngresar_Click" Width="31%" />
                 <asp:Button ID="btnRegistrarAlumno" runat="server" Text="Registrar Alumno" CssClass="btn bg-olive" Width="31%" />
                 <asp:Button ID="btnRegistrarProfesor" runat="server" Text="Registrar Profesor" CssClass="btn bg-olive" Width="31%" />
+
+<%--            </LayoutTemplate>
+            </asp:Login>--%>
 
             </div>
         </form>

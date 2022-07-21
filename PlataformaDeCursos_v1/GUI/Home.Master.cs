@@ -17,5 +17,15 @@ namespace GUI
                 txtUsuario.Text = objAlumno.Nombre +" "+objAlumno.Apellido;
             }
         }
+
+        protected void btnSalir_Click(object sender, EventArgs e)
+        {
+                
+                Session["usuario"] = null;
+                Response.Write(" <script> alert('SESION CERRADA') </script >");
+                Response.Redirect("miUAI.aspx");
+
+            }
+
     }
 }
