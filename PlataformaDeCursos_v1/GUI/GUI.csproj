@@ -221,8 +221,8 @@
     <Content Include="css\morris\morris.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
-    <Content Include="Curso.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GestionarAlumno.aspx" />
     <Content Include="Global.asax" />
     <Content Include="img\iconoUsuario.jpg" />
     <Content Include="js\AdminLTE\app.js" />
@@ -359,6 +359,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="BitacoraMenu.aspx.cs">
       <DependentUpon>BitacoraMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -368,10 +369,14 @@
     </Compile>
     <Compile Include="Curso.aspx.cs">
       <DependentUpon>Curso.aspx</DependentUpon>
+=======
+    <Compile Include="GestionarAlumno.aspx.cs">
+      <DependentUpon>GestionarAlumno.aspx</DependentUpon>
+>>>>>>> 92c5cd6d096f82f14ec7cee9e73100e9cd8a2b98
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Curso.aspx.designer.cs">
-      <DependentUpon>Curso.aspx</DependentUpon>
+    <Compile Include="GestionarAlumno.aspx.designer.cs">
+      <DependentUpon>GestionarAlumno.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
