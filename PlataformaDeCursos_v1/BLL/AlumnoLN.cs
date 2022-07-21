@@ -47,5 +47,17 @@ namespace BLL
             }
         }
 
+        public bool RegistrarAlumno(alumno alu)
+        {
+            try
+            {
+                return alumnoDAO.getInstance().RegistrarAlumno(alu);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

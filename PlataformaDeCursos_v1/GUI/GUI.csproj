@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Composition.Registration" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BitacoraMenu.aspx" />
     <Content Include="css\AdminLTE.css" />
     <Content Include="css\bootstrap-slider\slider.css" />
     <Content Include="css\bootstrap-wysihtml5\bootstrap3-wysihtml5.css" />
@@ -347,13 +350,22 @@
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Menu_Administrador.aspx" />
     <Content Include="miPerfil.aspx" />
     <Content Include="miUAI.aspx" />
     <Content Include="misCursos.aspx" />
     <Content Include="PanelGeneral.aspx" />
+    <Content Include="RegistrarAlumno.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraMenu.aspx.cs">
+      <DependentUpon>BitacoraMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BitacoraMenu.aspx.designer.cs">
+      <DependentUpon>BitacoraMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Curso.aspx.cs">
       <DependentUpon>Curso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -377,6 +389,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Administrador.aspx.cs">
+      <DependentUpon>Menu_Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu_Administrador.aspx.designer.cs">
+      <DependentUpon>Menu_Administrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="miPerfil.aspx.cs">
       <DependentUpon>miPerfil.aspx</DependentUpon>
@@ -407,6 +426,13 @@
       <DependentUpon>PanelGeneral.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarAlumno.aspx.cs">
+      <DependentUpon>RegistrarAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarAlumno.aspx.designer.cs">
+      <DependentUpon>RegistrarAlumno.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\fonts\glyphicons-halflings-regular.eot" />

@@ -1,0 +1,16 @@
+CREATE PROCEDURE [dbo].[spRegistrarBitacora]
+(
+@prmUsuario nvarchar(50),
+@prmHora nvarchar(50),
+@prmDia nvarchar(50),
+@prmFuncionalidad nvarchar(50),
+@prmMensaje nvarchar(50),
+@prmEvento nvarchar(50), 
+@prmDVH nvarchar(50)
+)
+AS
+	BEGIN
+		INSERT INTO Bitacora(Usuario, Hora,	Dia, Funcionalidad, Mensaje, Evento, DVH)
+		VALUES(@prmUsuario, @prmHora, @prmDia, @prmFuncionalidad, @prmMensaje, @prmEvento, @prmDVH);
+	END
+GO

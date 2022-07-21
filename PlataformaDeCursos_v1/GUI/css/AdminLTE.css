@@ -2392,8 +2392,9 @@ Component: timeline
     Page: register and login
 */
 .form-box {
-  width: 360px;
+  width: 496px;
   margin: 90px auto 0 auto;
+    height: 264px;
 }
 .form-box .header {
   -webkit-border-top-left-radius: 4px;

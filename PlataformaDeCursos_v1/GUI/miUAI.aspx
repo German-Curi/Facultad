@@ -6,9 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>miUAI</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
 <!-- Font Awesome -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg  bg-dark fixed-top">
@@ -21,8 +21,8 @@
      <div class="collapse navbar-collapse" id="nav">
     <ul class="navbar-nav ml-auto">
 <%--      <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="home">Home</a>--%>
-      </li>
+        <a class="nav-link font-weight-bold" href="home">Home</a>
+      </li>--%>
       <li class="nav-item">
         <a class="nav-link font-weight-bold" href="Login.aspx">LOGIN</a>
       </li>
@@ -34,7 +34,7 @@
   </div>
 </nav>
  <header>
-     	<br><br>
+     	<br/>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">

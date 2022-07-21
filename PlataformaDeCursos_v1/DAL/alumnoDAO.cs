@@ -48,7 +48,7 @@ namespace DAL
                     objAlumno.TipoDocumento = dr["Tipo_Documento"].ToString();
                     objAlumno.NroDocumento = Convert.ToInt32(dr["Num_Documento"].ToString());
                     objAlumno.Edad = Convert.ToInt32(dr["Edad"].ToString());
-                    objAlumno.Telefono = dr["Telefono"].ToString();
+                    objAlumno.Telefono = Convert.ToInt32(dr["Telefono"].ToString());
                     objAlumno.Email = dr["Email"].ToString();
                     objAlumno.Clave = dr["Contrasenia"].ToString();
                     //objAlumno.Estado = true;
@@ -111,5 +111,40 @@ namespace DAL
 
         }
 
+        public bool RegistrarAlumno(alumno alu)
+        {
+            SqlConnection con = null;
+            SqlCommand cmd = null;
+            bool response = false;
+            try
+            {
+                con = Conexion.getInstance().ConexionBD();
+                cmd = new SqlCommand("spRegistrarAlumno", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@prmNombre", alu.Nombre);
+                cmd.Parameters.AddWithValue("@prmApellido", alu.Apellido);
+                cmd.Parameters.AddWithValue("@prmTipo_Documento", alu.TipoDocumento);
+                cmd.Parameters.AddWithValue("@prmNum_Documento", alu.NroDocumento);
+                cmd.Parameters.AddWithValue("@prmEdad", alu.Edad);
+                cmd.Parameters.AddWithValue("@prmTelefono", alu.Telefono);
+                cmd.Parameters.AddWithValue("@prmEmail", alu.Email);
+                cmd.Parameters.AddWithValue("@prmContrasenia", alu.Clave);
+                cmd.Parameters.AddWithValue("@prmDVH", alu.DVH);
+                con.Open();
+                int filas = cmd.ExecuteNonQuery();
+                if (filas > 0) response = true;
+
+            }
+            catch (Exception ex)
+            {
+                response = false;
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return response;
+        }
     }
 }

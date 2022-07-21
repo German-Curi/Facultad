@@ -14,14 +14,15 @@ namespace BE
         public String TipoDocumento { get; set; }
         public int NroDocumento { get; set; }
         public int Edad { get; set; }   //DEBERIA SER FECHA DE NACIMIENTO
-        public String Telefono { get; set; }
+        public int Telefono { get; set; }
         public String Email { get; set; }
         public String Clave { get; set; }
+        public String DVH { get; set; }
         public bool Estado { get; set; }
 
-        public alumno() : this(0, "", "", "", 0, 0, "", "", "", false) { }
+        public alumno() : this(0, "", "", "", 0, 0, 0, "", "", false) { }
 
-        public alumno(int ID, String Nombre, String Apellido, String TipoDocumento, int NroDocumento, int Edad, String Telefono, String Email, String Clave, bool Estado)
+        public alumno(int ID, String Nombre, String Apellido, String TipoDocumento, int NroDocumento, int Edad, int Telefono, String Email, String Clave, bool Estado)
         {
             this.ID = ID;
             this.Nombre = Nombre;

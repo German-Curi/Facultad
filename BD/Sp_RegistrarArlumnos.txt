@@ -1,0 +1,18 @@
+CREATE PROCEDURE [dbo].[spRegistrarAlumno]
+(
+@prmNombre nvarchar(50),
+@prmApellido nvarchar(50),
+@prmTipo_Documento nvarchar(50),
+@prmNum_Documento int,
+@prmEdad int,
+@prmTelefono int, 
+@prmEmail nvarchar(50),
+@prmContrasenia nvarchar(50),
+@prmDVH nvarchar(50)
+)
+AS
+	BEGIN
+		INSERT INTO alumnos(Nombre, Apellido,Tipo_Documento, Num_Documento,Edad,Telefono, Email,Contrasenia ,ID_Rol, DVH)
+		VALUES(@prmNombre, @prmApellido, @prmTipo_Documento, @prmNum_Documento, @prmEdad, @prmTelefono,@prmEmail,@prmContrasenia,1, @prmDVH);
+	END
+GO

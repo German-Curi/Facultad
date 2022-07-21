@@ -20,7 +20,7 @@ namespace GUI
                 tipo_documento_txt.Text = objAlumno.TipoDocumento;
                 num_documento_txt.Text = objAlumno.NroDocumento.ToString();
                 fecha_nac_txt.Text = objAlumno.Edad.ToString();
-                telefono_txt.Text = objAlumno.Telefono;
+                telefono_txt.Text = objAlumno.Telefono.ToString();
                 email_txt.Text = objAlumno.Email;
             }
         }

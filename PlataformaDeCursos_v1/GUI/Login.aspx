@@ -24,7 +24,7 @@
             <div class="footer"> 
 
                 <asp:Button ID="btnIngresar" runat="server" Text="Iniciar sesión" CssClass="btn bg-blue" OnClick="btnIngresar_Click" Width="31%" />
-                <asp:Button ID="btnRegistrarAlumno" runat="server" Text="Registrar Alumno" CssClass="btn bg-olive" Width="31%" />
+                <asp:Button ID="btnRegistrarAlumno" runat="server" Text="Registrar Alumno" CssClass="btn bg-olive" Width="31%" OnClick="btnRegistrarAlumno_Click" />
                 <asp:Button ID="btnRegistrarProfesor" runat="server" Text="Registrar Profesor" CssClass="btn bg-olive" Width="31%" />
 
             </div>
