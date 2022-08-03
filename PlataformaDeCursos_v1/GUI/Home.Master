@@ -210,6 +210,12 @@
                             <span>Mi Perfil</span>
                         </a>
                     </li>
+                    <li>
+                         <a href="Salir.aspx">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Salir</span>
+                        </a>
+                    </li>
                 </ul>
             </section>
         </aside>
