@@ -210,13 +210,6 @@
                             <span>Mi Perfil</span>
                         </a>
                     </li>
-                <li>
-                    <asp:Button ID="Button1" runat="server" Text="Button" /> 
-                        <i class="fa fa-dashboard"></i>
-
-                    </li>
-
-
                 </ul>
             </section>
         </aside>
