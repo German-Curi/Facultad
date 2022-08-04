@@ -69,7 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BitacoraMenu.aspx" />
+    <Content Include="BitacoraHome.aspx" />
     <Content Include="css\AdminLTE.css" />
     <Content Include="css\bootstrap-slider\slider.css" />
     <Content Include="css\bootstrap-wysihtml5\bootstrap3-wysihtml5.css" />
@@ -221,7 +221,6 @@
     <Content Include="css\morris\morris.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
-    <Content Include="Curso.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="img\iconoUsuario.jpg" />
@@ -350,32 +349,38 @@
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Menu_Administrador.aspx" />
     <Content Include="miPerfil.aspx" />
     <Content Include="miUAI.aspx" />
     <Content Include="misCursos.aspx" />
+    <Content Include="PanelAdministrador.aspx" />
     <Content Include="PanelGeneral.aspx" />
     <Content Include="RegistrarAlumno.aspx" />
+    <Content Include="Registro_Alumnos_master.aspx" />
     <Content Include="Salir.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitacoraMenu.aspx.cs">
-      <DependentUpon>BitacoraMenu.aspx</DependentUpon>
+    <Compile Include="BitacoraHome.aspx.cs">
+      <DependentUpon>BitacoraHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BitacoraMenu.aspx.designer.cs">
-      <DependentUpon>BitacoraMenu.aspx</DependentUpon>
+    <Compile Include="BitacoraHome.aspx.designer.cs">
+      <DependentUpon>BitacoraHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Curso.aspx.cs">
-      <DependentUpon>Curso.aspx</DependentUpon>
+    <Compile Include="Custom\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Curso.aspx.designer.cs">
-      <DependentUpon>Curso.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Custom\CustomMembershipProvider.cs" />
+    <Compile Include="Custom\SessionManager.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Admin.Master.cs">
+      <DependentUpon>Home_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Admin.Master.designer.cs">
+      <DependentUpon>Home_Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
@@ -390,13 +395,6 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Menu_Administrador.aspx.cs">
-      <DependentUpon>Menu_Administrador.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Menu_Administrador.aspx.designer.cs">
-      <DependentUpon>Menu_Administrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="miPerfil.aspx.cs">
       <DependentUpon>miPerfil.aspx</DependentUpon>
@@ -419,6 +417,13 @@
     <Compile Include="misCursos.aspx.designer.cs">
       <DependentUpon>misCursos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PanelAdministrador.aspx.cs">
+      <DependentUpon>PanelAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelAdministrador.aspx.designer.cs">
+      <DependentUpon>PanelAdministrador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PanelGeneral.aspx.cs">
       <DependentUpon>PanelGeneral.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -433,6 +438,13 @@
     </Compile>
     <Compile Include="RegistrarAlumno.aspx.designer.cs">
       <DependentUpon>RegistrarAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Alumnos_master.aspx.cs">
+      <DependentUpon>Registro_Alumnos_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro_Alumnos_master.aspx.designer.cs">
+      <DependentUpon>Registro_Alumnos_master.aspx</DependentUpon>
     </Compile>
     <Compile Include="Salir.aspx.cs">
       <DependentUpon>Salir.aspx</DependentUpon>
@@ -453,6 +465,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Home.Master" />
+    <Content Include="Home_Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

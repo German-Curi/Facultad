@@ -146,5 +146,49 @@ namespace DAL
             }
             return response;
         }
+
+        public List<alumno> ObtenerAlumnos()
+        {
+            SqlConnection con = null;
+            SqlCommand cmd;
+            List<alumno> lsalumno = new List<alumno>();
+            SqlDataReader dr;
+            try
+            {
+                con = Conexion.getInstance().ConexionBD();
+                cmd = new SqlCommand("spObtener_Alumnos", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                con.Open();
+                dr = cmd.ExecuteReader();
+                while (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        alumno objAlumno = new alumno();
+                        objAlumno.Nombre = dr["Nombre"].ToString();
+                        objAlumno.Apellido = dr["Apellido"].ToString();
+                        objAlumno.TipoDocumento = dr["Tipo_Documento"].ToString();
+                        objAlumno.NroDocumento = Convert.ToInt32(dr["Num_Documento"].ToString());
+                        objAlumno.Edad = Convert.ToInt32(dr["Edad"].ToString());
+                        objAlumno.Telefono = Convert.ToInt32(dr["Telefono"].ToString());
+                        objAlumno.Email = dr["Email"].ToString();
+                        objAlumno.Clave = dr["Contrasenia"].ToString();
+                        objAlumno.DVH = dr["DVH"].ToString();
+                        lsalumno.Add(objAlumno);
+                    }
+                    dr.NextResult();
+                }
+            }
+            catch (Exception ex)
+            {
+                lsalumno = null;
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return lsalumno;
+        }
     }
 }

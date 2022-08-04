@@ -59,5 +59,17 @@ namespace BLL
                 throw ex;
             }
         }
+        public List<alumno> ObtenerAlumnos()
+        {
+            try
+            {
+                return alumnoDAO.getInstance().ObtenerAlumnos();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

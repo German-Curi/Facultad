@@ -27,7 +27,7 @@
 		</div>
 	</div>
  </header>  
-<body>
+
 	<h1>Mi perfil</h1>
 	<asp:Label ID="nombre_lbl" runat="server" >Nombre: </asp:Label>
 	<asp:TextBox ID="nombre_txt" runat="server" Enabled="false"></asp:TextBox>
@@ -66,12 +66,4 @@
 	<br />
 	<asp:Button ID="actualizar" runat="server" Text="Actualizar" OnClick="actualizar_Click" />
 	<asp:Button ID="guardar" runat="server" Text="Guardar" />
-</body>
-
-   
-
-
-
-
-
 </asp:Content>

@@ -11,10 +11,13 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["usuario"] != null)
+            if (!IsPostBack)
             {
-                alumno objAlumno = (alumno)Session["usuario"];
-                txtUsuario.Text = objAlumno.Nombre +" "+objAlumno.Apellido;
+                if (Session["UserSessionAlumno"] != null)
+                {
+                    alumno objAlumno = (alumno)Session["UserSessionAlumno"];
+                    txtUsuario.Text = objAlumno.Nombre;
+                }
             }
         }
     }

@@ -13,7 +13,7 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            alumno objAlumno = (alumno)Session["usuario"];
+            alumno objAlumno = (alumno)Session["UserSessionAlumno"];
             grilla.DataSource = AlumnoLN.getInstance().ObtenerCursosAlumno(objAlumno.ID);
             grilla.DataBind();
         }

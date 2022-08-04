@@ -12,9 +12,9 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["usuario"] != null)
+            if (Session["UserSessionAlumno"] != null)
             {
-                alumno objAlumno = (alumno)Session["usuario"];
+                alumno objAlumno = (alumno)Session["UserSessionAlumno"];
                 nombre_txt.Text = objAlumno.Nombre;
                 apellido_txt.Text = objAlumno.Apellido;
                 tipo_documento_txt.Text = objAlumno.TipoDocumento;
